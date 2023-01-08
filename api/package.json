@@ -14,7 +14,7 @@
         "prebuild": "rimraf dist",
         "build": "./scripts/build_tag.sh $npm_package_config_projectName $npm_package_config_imageTag",
         "build:app": "nest build",
-        "deploy": "./scripts/deploy.sh $npm_package_config_projectName $npm_package_config_imageTag $npm_package_config_region",
+        "deploy:environment": "./scripts/deploy.sh $npm_package_config_projectName $npm_package_config_imageTag $npm_package_config_region",
         "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
         "start": "node main.js",
         "start:local": "nest start",
