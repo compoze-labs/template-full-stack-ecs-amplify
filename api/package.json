@@ -7,7 +7,7 @@
     "license": "UNLICENSED",
     "config": {
         "projectName": "templatenametoreplace",
-        "region": "<region>",
+        "region": "<REGION>",
         "imageTag": "latest"
     },
     "scripts": {
