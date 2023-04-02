@@ -6,8 +6,6 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 APP_NAME=$1
 VERSION=$2
 REGION=$3
-# NOTE - this always needs to be the last param so it can be passed in on the command line
-ENV=$4
 
 ## declare functions
 . ./scripts/login.sh
@@ -15,7 +13,7 @@ ENV=$4
 . ./scripts/restart_service.sh
 
 if [[ -z "${ENV}" ]]; then
-    echo "$ENV is not a valid environment, must be either dev, stage, or prod; re-run with npm run deploy <environment>"
+    echo "$ENV is not a valid environment; re-run with pnpm run deploy <environment>"
     exit 1
 else 
     echo "building docker image"
