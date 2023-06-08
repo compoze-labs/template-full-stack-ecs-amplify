@@ -11,10 +11,12 @@ export class AppController {
 
   @Get()
   getHello(): string {
+    console.log('hello request received')
     return this.appService.getHello();
   }
   @Get('/thing')
   thing(): Thing {
+    console.log('received request for thing')
     return {
       thingProperty: 'thingValue'
     }
