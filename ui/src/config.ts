@@ -1,7 +1,7 @@
 export const config = {
     USE_DEFAULT_EXAMPLE:
         getOrDefault('REACT_APP_USE_DEFAULT_EXAMPLE', 'false') === 'true',
-    BACKEND_API: getOrDefault('REACT_APP_BACKEND_API', 'https://localhost:5000'),
+    BACKEND_API: getOrDefault('REACT_APP_BACKEND_API', 'http://localhost:5000'),
     DISPLAY_MESSAGE: getOrDefault(
         'REACT_APP_DISPLAY_MESSAGE',
         'Hello <not set>'
