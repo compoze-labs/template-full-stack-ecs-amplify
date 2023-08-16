@@ -28,7 +28,6 @@
         "react-refresh": "0.11.0"
     },
     "scripts": {
-        "bootstrap": "./scripts/bootstrap.sh $npm_package_config_product $npm_package_config_component",
         "start": "DISABLE_ESLINT_PLUGIN=true craco start",
         "start:built": "serve -s build",
         "build": "DISABLE_ESLINT_PLUGIN=true craco build",
