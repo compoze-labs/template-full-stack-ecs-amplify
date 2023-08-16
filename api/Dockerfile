@@ -1,4 +1,4 @@
-FROM node:16-slim
+FROM node:18-slim
 
 ARG NODE_ENV=production
 ENV NODE_ENV $NODE_ENV
@@ -8,8 +8,8 @@ ARG PORT=5000
 ENV PORT $PORT
 EXPOSE $PORT 9229 9230
 
-RUN npm i npm@8.15.0 -g
-RUN npm i pnpm@7.18.2 -g
+RUN npm i npm@8.19.4 -g
+RUN npm i pnpm@8.6.12 -g
 
 RUN mkdir /opt/node_app && chown node:node /opt/node_app
 WORKDIR /opt/node_app

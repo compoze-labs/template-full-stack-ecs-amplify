@@ -8,19 +8,19 @@
         "format": "prettier --ignore-path .gitignore --ignore-path .prettierignore --write \"**/*.+(js|ts|jsx|tsx|yml|yaml|json)\""
     },
     "devDependencies": {
-        "@typescript-eslint/eslint-plugin": "^5.33.1",
-        "eslint": "^8.22.0",
-        "eslint-config-prettier": "^8.5.0",
+        "@typescript-eslint/eslint-plugin": "^5.62.0",
+        "eslint": "^8.47.0",
+        "eslint-config-prettier": "^8.10.0",
         "eslint-plugin-only-error": "^1.0.2",
         "eslint-plugin-prettier": "^4.2.1",
-        "eslint-plugin-react": "^7.30.1",
-        "eslint-plugin-storybook": "^0.6.4",
+        "eslint-plugin-react": "^7.33.1",
+        "eslint-plugin-storybook": "^0.6.13",
         "eslint-plugin-unused-imports": "^2.0.0",
-        "prettier": "^2.7.1"
+        "prettier": "^2.8.8"
     },
-    "packageManager": "pnpm@7.9.5",
+    "packageManager": "pnpm@8.6.12",
     "engines": {
-        "pnpm": "^7.0.0"
+        "pnpm": "^8.6.12"
     },
     "pnpm": {
         "overrides": {
